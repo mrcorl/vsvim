@@ -12,6 +12,7 @@ map <leader>n :vsc Edit.GoToNextLocation<CR>
 map <leader>p :vsc Edit.GoToPrevLocation<CR>
 map <leader>q :vsc View.ErrorList<CR>
 map <leader>ca :vsc EditorContextMenus.CodeWindow.QuickActionsForPosition<CR>
+map K :vsc Edit.QuickInfo<CR>
 
 map <leader>ws :vsc VAssistX.FindSymbolDialog<CR>
 map <leader>ds :vsc VAssistX.ListMethodsInCurrentFile<CR>
