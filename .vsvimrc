@@ -4,10 +4,14 @@ set relativenumber
 
 let mapleader="\<Space>"
 
+map gcc :vsc VAssistX.SelectionToggleLineComment<CR>
+
 map gd :vsc VAssistX.GotoImplementation<CR><Esc>
 map gr :vsc VAssistX.FindReferences<CR>
 map <leader>n :vsc Edit.GoToNextLocation<CR>
 map <leader>p :vsc Edit.GoToPrevLocation<CR>
+map <leader>q :vsc View.ErrorList<CR>
+map <leader>ca :vsc EditorContextMenus.CodeWindow.QuickActionsForPosition<CR>
 
 map <leader>ws :vsc VAssistX.FindSymbolDialog<CR>
 map <leader>ds :vsc VAssistX.ListMethodsInCurrentFile<CR>
@@ -17,7 +21,8 @@ map <leader>gh :vsc VAssistX.OpenCorrespondingFile<CR>
 map <leader>mb :vsc Build.BuildSolution<CR>
 map <leader>bl :vsc Debug.Start<CR>
 map <leader>bq :vsc Debug.StopDebugging<CR>
-map <leader>fb :vsc Edit.FormatDocument<CR>
+map <leader>ff :vsc Edit.FormatDocument<CR>
+map <leader>fb :vsc View.SolutionExplorer<CR>
 
 vmap v :vsc VAssistX.SmartSelectExtend<CR>
 vmap V :vsc VAssistX.SmartSelectShrink<CR>
