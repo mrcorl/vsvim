@@ -41,7 +41,8 @@ map <leader>fb :vsc View.SolutionExplorer<CR>
 " ---------------------------------------------------------------
 
 " NOTE: DEBUGGING
-map <leader>mb :vsc Build.BuildSolution<CR>
+map <leader>mb :vsc Build.BuildSelection<CR>
+map <leader>mB :vsc Build.BuildSolution<CR>
 map <leader>bl :vsc Debug.Start<CR>
 map <leader>bq :vsc Debug.StopDebugging<CR>
 " ---------------------------------------------------------------
