@@ -1,39 +1,47 @@
+" NOTE: OPTIONS
 set timeoutlen=5000
 set scrolloff=8
 set relativenumber
 
 let mapleader="\<Space>"
 
-map gcc :vsc VAssistX.SelectionToggleLineComment<CR>
-
-map gd :vsc VAssistX.GotoImplementation<CR><Esc>
-map gr :vsc VAssistX.FindReferences<CR>
-map <leader>n :vsc Edit.GoToNextLocation<CR>
-map <leader>p :vsc Edit.GoToPrevLocation<CR>
-map <leader>q :vsc View.ErrorList<CR>
-map <leader>ca :vsc EditorContextMenus.CodeWindow.QuickActionsForPosition<CR>
-nmap K :vsc Edit.QuickInfo<CR>
-
-vmap K :vsc Edit.MoveSelectedLinesUp<CR>
-vmap J :vsc Edit.MoveSelectedLinesDown<CR>
-
-map <leader>ws :vsc VAssistX.FindSymbolDialog<CR>
-map <leader>ds :vsc VAssistX.ListMethodsInCurrentFile<CR>
-map <leader>sf :vsc VAssistX.OpenFileInSolutionDialog<CR>
-map <leader>sg :vsc Edit.FindinFiles<CR>
-map <leader>rn :vsc VAssistX.RefactorRename<CR>
-map <leader>gh :vsc VAssistX.OpenCorrespondingFile<CR>
-map <leader>mb :vsc Build.BuildSolution<CR>
-map <leader>bl :vsc Debug.Start<CR>
-map <leader>bq :vsc Debug.StopDebugging<CR>
-map <leader>ff :vsc Edit.FormatDocument<CR>
-map <leader>fb :vsc View.SolutionExplorer<CR>
-
+" NOTE: SELECTION
 vmap v :vsc VAssistX.SmartSelectExtend<CR>
 vmap V :vsc VAssistX.SmartSelectShrink<CR>
+" ---------------------------------------------------------------
 
+" NOTE: EDITING
+map <leader>ca :vsc EditorContextMenus.CodeWindow.QuickActionsForPosition<CR>
+map <leader>rn :vsc VAssistX.RefactorRename<CR>
+map gcc :vsc VAssistX.SelectionToggleLineComment<CR>
+vmap K :vsc Edit.MoveSelectedLinesUp<CR>
+vmap J :vsc Edit.MoveSelectedLinesDown<CR>
+map <leader>ff :vsc Edit.FormatDocument<CR>
+" ---------------------------------------------------------------
+
+" NOTE: NAVIGATION
+map <leader>n :vsc Edit.GoToNextLocation<CR>
+map <leader>p :vsc Edit.GoToPrevLocation<CR>
 map <C-o> :vsc View.NavigateBackward<CR>
 map <C-i> :vsc View.NavigateForward<CR>
 nnoremap <C-d> <C-d>zz
 nnoremap <C-u> <C-u>zz
 
+map gd :vsc VAssistX.GotoImplementation<CR><Esc>
+map gr :vsc VAssistX.FindReferences<CR>
+map <leader>ws :vsc VAssistX.FindSymbolDialog<CR>
+map <leader>sg :vsc Edit.FindinFiles<CR>
+map <leader>ds :vsc VAssistX.ListMethodsInCurrentFile<CR>
+map <leader>sf :vsc VAssistX.OpenFileInSolutionDialog<CR>
+map <leader>gh :vsc VAssistX.OpenCorrespondingFile<CR>
+
+nmap K :vsc Edit.QuickInfo<CR>
+map <leader>q :vsc View.ErrorList<CR>
+map <leader>fb :vsc View.SolutionExplorer<CR>
+" ---------------------------------------------------------------
+
+" NOTE: DEBUGGING
+map <leader>mb :vsc Build.BuildSolution<CR>
+map <leader>bl :vsc Debug.Start<CR>
+map <leader>bq :vsc Debug.StopDebugging<CR>
+" ---------------------------------------------------------------
