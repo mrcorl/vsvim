@@ -2,6 +2,8 @@
 set timeoutlen=5000
 set scrolloff=8
 set relativenumber
+set ignorecase
+set smartcase
 
 let mapleader="\<Space>"
 
