@@ -40,6 +40,7 @@ map <leader>gh :vsc VAssistX.OpenCorrespondingFile<CR>
 nmap K :vsc Edit.QuickInfo<CR>
 map <leader>q :vsc View.ErrorList<CR>
 map <leader>fb :vsc View.SolutionExplorer<CR>
+map <leader>yp File.CopyFullPath<CR>
 
 map <leader>h zc
 map <leader>l zo
