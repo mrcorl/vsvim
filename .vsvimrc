@@ -24,8 +24,8 @@ map <leader>ff :vsc Edit.FormatDocument<CR>
 " ---------------------------------------------------------------
 
 " NOTE: NAVIGATION
-map <leader>n :vsc Edit.GoToNextLocation<CR>
-map <leader>p :vsc Edit.GoToPrevLocation<CR>
+map ]d :vsc View.NextError<CR>
+map [d :vsc View.PreviousError<CR>
 map <C-o> :vsc View.NavigateBackward<CR>
 map <C-i> :vsc View.NavigateForward<CR>
 nnoremap <C-d> <C-d>zz
@@ -33,7 +33,7 @@ nnoremap <C-u> <C-u>zz
 
 map gd :vsc VAssistX.GotoImplementation<CR><Esc>
 map gr :vsc VAssistX.FindReferences<CR>
-map gi :vsc View.SynchronizeClassView<CR>
+map gi :vsc VAssistX.GoToRelated<CR>
 map <leader>ws :vsc VAssistX.FindSymbolDialog<CR>
 map <leader>sg :vsc Edit.FindinFiles<CR>
 map <leader>ds :vsc VAssistX.ListMethodsInCurrentFile<CR>
@@ -45,13 +45,15 @@ map <leader>q :vsc View.ErrorList<CR>
 map <leader>fb :vsc View.SolutionExplorer<CR>
 map <leader>yp File.CopyFullPath<CR>
 
-map <leader>h zc
-map <leader>l zo
+map <leader>ha :vsc Window.PinTab<CR>
+map <leader><leader> :vsc Window.CloseAllButPinned<CR>
 " ---------------------------------------------------------------
 
 " NOTE: DEBUGGING
-map <leader>mb :vsc Build.BuildSelection<CR>
-map <leader>mB :vsc Build.BuildSolution<CR>
+map <leader>mB :vsc Build.BuildSelection<CR>
+map <leader>mb :vsc Build.BuildSolution<CR>
+map <leader>mv :vsc Build.SolutionConfigurations<CR>
 map <leader>bl :vsc Debug.Start<CR>
 map <leader>bq :vsc Debug.StopDebugging<CR>
+map <leader>mh :vsc Debug.ApplyCodeChanges<CR>
 " ---------------------------------------------------------------
