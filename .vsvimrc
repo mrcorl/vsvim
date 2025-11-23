@@ -37,7 +37,7 @@ map gi :vsc VAssistX.GoToRelated<CR>
 map <leader>ws :vsc VAssistX.FindSymbolDialog<CR>
 map <leader>sg :vsc Edit.FindinFiles<CR>
 map <leader>ds :vsc VAssistX.ListMethodsInCurrentFile<CR>
-map <leader>sc :vsc VAssistX.OpenFileInSolutionDialog<CR>
+map <leader>sf :vsc VAssistX.OpenFileInSolutionDialog<CR>
 map <leader>gh :vsc VAssistX.OpenCorrespondingFile<CR>
 
 nmap K :vsc Edit.QuickInfo<CR>
